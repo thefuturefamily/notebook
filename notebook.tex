@@ -1,0 +1,65 @@
+% %! TEX program = xelatex
+% %! BIB program = bibtex
+\documentclass[11pt]{notebook}
+
+\begin{document}
+
+\notebook{My Mathemagical Book Notes}
+        {Family Member}
+        {2019}
+        {The Future Family}
+        {Beijing, China}
+
+%---------------------------------------------------------------------------
+% Forward
+%---------------------------------------------------------------------------
+\part*{Foreword}
+
+% Preface
+%---------------------------------------------------------------------------
+\chapter*{Preface}
+\addchapter{Preface}
+
+This part remains to be completed.
+
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+%---------------------------------------------------------------------------
+% Part I, Complex Analysis: First steps
+%---------------------------------------------------------------------------
+\part{Complex Analysis: First steps}
+
+\include{chapters/ComplexAnalysis}
+
+%---------------------------------------------------------------------------
+% Forward
+%---------------------------------------------------------------------------
+\part*{Afterword}
+
+% Further Steps
+%---------------------------------------------------------------------------
+\chapter{Further Steps}
+
+This part remains to be completed.
+
+
+%---------------------------------------------------------------------------
+% Bibliography
+%---------------------------------------------------------------------------
+
+\cleardoublepage
+\addchapter{Literature}
+\renewcommand{\bibname}{Literature}
+\bibliography{bibliography.bib}
+
+%---------------------------------------------------------------------------
+% Index
+%---------------------------------------------------------------------------
+
+\cleardoublepage
+\addchapter{Index}
+\printindex
+
+\end{document}
